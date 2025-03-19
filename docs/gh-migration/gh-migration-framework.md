@@ -3,8 +3,6 @@
 
    The __GitHub Migration Framework__ provides a structured approach for migrating from existing DevOps toolchains to GitHub, ensuring smooth execution, risk mitigation, and alignment with organizational goals. This framework exclusively utilizes __Microsoft and GitHub-related products__, including __Office 365 and GitHub (Repos, Projects, Issues, Discussions, Actions, etc.)__.
 <img width="990" alt="Screenshot 2025-03-19 at 11 23 13 AM" src="https://github.com/user-attachments/assets/d54309be-cbbb-47b4-b398-ffd42d8f1fe4" />
-
-![ alt text](/path/image. jpg
    
 ## 2. __Migration Project Management Components__   
 
