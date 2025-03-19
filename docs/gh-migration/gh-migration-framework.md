@@ -8,9 +8,9 @@
 
 ### a. Project Flow
 1. Initiation
-     * Define objectives, success criteria, and scope.
-     * Identify key stakeholders and assigne roles.
-     * Conduct initial discovery and inventory collection.
+    * Define objectives, success criteria, and scope.
+    * Identify key stakeholders and assigne roles.
+    * Conduct initial discovery and inventory collection.
 1. Planning
      * Develop a __migration backlog__ with prioritized tasks.
      * Define the __migration cadence (sprint-based, phased, or big bang).
@@ -25,7 +25,7 @@
      * Conduct __final documentation and knowledge transfer__.
 
 ## 3. __Migration Backlog Management__ 
-#Backlog Categories
+__Backlog Categories__
 1. __Pre-Migration Tasks__
      * Inventory collection (Repositories, Pipelines, Policies, etc.)
      * Access & authentication setup (PATs, SSO, OAuth)
@@ -46,85 +46,86 @@
      * Retrospective and documentation
      * Continuous monitoring setup (DORA metrics, GitHub Insights)
 
- ### __Backlog Prioritization Criteria__
-     * Business impact
-     * Technical complexity
-     * Risk level
-     * Dependencies between assets
+ ### **Backlog Prioritization Criteria**
+* Business impact
+* Technical complexity
+* Risk level
+* Dependencies between assets
 
 ## 4. Team Cadence & Governance
 
-Team Structure
-Migration Lead: Oversees the entire migration process.
-Technical Migration Engineers: Execute repository, CI/CD, and security migrations.
-Product Owners / Stakeholders: Define requirements and validate outcomes.
-Project Manager: Ensures project tracking, backlog prioritization, and risk mitigation.
+### **Team Structure** 
+* __Migration Lead:__ Oversees the entire migration process.
+* __Technical Migration Engineers:__ Execute repository, CI/CD, and security migrations.
+* __Product Owners / Stakeholders:__ Define requirements and validate outcomes.
+* __Project Manager:__ Ensures project tracking, backlog prioritization, and risk mitigation.
 
-Cadence
-Daily Standups (15 min): Track progress, blockers, and adjustments.
-Weekly Migration Review (60 min): Assess backlog progress, validate dry-run outcomes.
-Stakeholder Sync (Bi-weekly/As needed): Align with business leaders and ensure priorities are met.
-Post-Migration Retrospective: Identify improvements for future migrations.
+### __Cadence__
+  * __Daily Standups (15 min):__ Track progress, blockers, and adjustments.
+  * __Weekly Migration Review (60 min):__ Assess backlog progress, validate dry-run outcomes.
+  * __Stakeholder Sync (Bi-weekly/As needed):__ Align with business leaders and ensure priorities are met.
+  * __Post-Migration Retrospective:__ Identify improvements for future migrations.
 
 ## 5. Artifacts & Templates
 
 
-**Artifact**	**Purpose**	**Format**	
-**Inventory Collection**	Tracks existing assets and dependencies.	Excel (Office 365 - Attached)	
-**Migration Plan**	Outlines strategy, risk assessment, and execution details.	Excel (Office 365 - Attached)	
-**Migration Backlog**	Tracks all migration tasks and prioritization.	GitHub Projects	
-**Project Status Reports**	Periodic reports for leadership and stakeholders.	Word/Excel (Office 365)	
-**Issue Tracking Document**	Logs migration issues and resolutions.	GitHub Issues	
-**Post-Migration Health Check**	Ensures all repositories, pipelines, and security settings are intact.	Markdown (GitHub Repo)	
+| **Artifact** |	**Purpose** |	**Format**	| 
+|--------------|-------------|------------|
+|**Inventory Collection** |	Tracks existing assets and dependencies.	| Excel (Office 365 - Attached)	|
+|**Migration Plan** |	Outlines strategy, risk assessment, and execution details.	| Excel (Office 365 - Attached)	
+|**Migration Backlog** |	Tracks all migration tasks and prioritization.	| GitHub Projects	
+|**Project Status Reports** |	Periodic reports for leadership and stakeholders.	| Word/Excel (Office 365)	
+|**Issue Tracking Document** |	Logs migration issues and resolutions.	| GitHub Issues	
+|**Post-Migration Health Check** |	Ensures all repositories, pipelines, and security settings are intact.	| Markdown (GitHub Repo)	
 
 
 ## 6. Integration with GitHub Project Tools
-For migration execution and tracking, use GitHub Projects:
-Kanban Board for Backlog Management
-Issue Tracking for Migration Blockers
-Pull Requests for Automated Migration Validations
-GitHub Actions for CI/CD Post-Migration Validation
+For migration execution and tracking, use __GitHub Projects:__
+* Kanban Board for Backlog Management
+* Issue Tracking for Migration Blockers
+* Pull Requests for Automated Migration Validations
+* GitHub Actions for CI/CD Post-Migration Validation
 
 ## 7. Migration Execution Phases
 
 a. Pre-Migration Phase
-Assessment & Planning
-Inventory all repositories, pipelines, users, permissions, policies, integrations.
-Define the scope and prioritize migration.
-Plan for governance, compliance, and security configurations.
-Generate Access & Tokens
-Set up authentication (SSO, PATs, OAuth).
-Establish required security policies.
+* Assessment & Planning
+  * Inventory all repositories, pipelines, users, permissions, policies, integrations.
+  * Define the scope and prioritize migration.
+  * Plan for governance, compliance, and security configurations.
+* Generate Access & Tokens
+  * Set up authentication (SSO, PATs, OAuth).
+  * Establish required security policies.
 
 b. Dry-Run Phase
-Discovery & Pre-Migration Analysis
-Map existing assets to GitHub equivalents.
-Identify compatibility issues.
-Dry-Run Execution
-Perform a test migration and verify integrity.
-Validate CI/CD, secrets, and access control.
-Dry-Run Analysis
-Document findings and refine migration plans.
+* Discovery & Pre-Migration Analysis
+  * Map existing assets to GitHub equivalents.
+  * Identify compatibility issues.
+* Dry-Run Execution
+  * Perform a test migration and verify integrity.
+  * Validate CI/CD, secrets, and access control.
+* Dry-Run Analysis
+  * Document findings and refine migration plans.
 
 c. Production Migration Phase
-Production Planning
-Apply lessons from dry-run testing.
-Define final cutover strategy.
-Production Execution
-Migrate assets and validate functionality.
-Post-Migration Analysis
-Conduct health checks and confirm success metrics.
+* Production Planning
+  * Apply lessons from dry-run testing.
+  * Define final cutover strategy.
+* Production Execution
+  * Migrate assets and validate functionality.
+* Post-Migration Analysis
+  * Conduct health checks and confirm success metrics.
 
 d. Engagement Closeout
-Provide final documentation.
-Train developers and administrators on the new GitHub setup.
-Transition ongoing management to operational teams.
+* Provide final documentation.
+* Train developers and administrators on the new GitHub setup.
+* Transition ongoing management to operational teams.
 
 ## 8. Next Steps
-Refine the backlog structure for better prioritization.
-Define granular checklists for each migration phase.
-**Validate team cadence with real migration execution.
-Develop detailed artifacts and templates for use within GitHub repositories.
+1. __Refine the backlog structure__ for better prioritization.
+2. __Define granular checklists__ for each migration phase.
+3. **Validate team cadence with real migration execution.
+4. __Develop detailed artifacts and templates__ for use within GitHub repositories.
 
 ## 9. Migration Program Rollout
 
