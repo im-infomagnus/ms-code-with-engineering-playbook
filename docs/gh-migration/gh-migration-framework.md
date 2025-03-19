@@ -25,32 +25,32 @@
      * Conduct __final documentation and knowledge transfer__.
 
 ## 3. __Migration Backlog Management__ 
-Backlog Categories
-Pre-Migration Tasks
-Inventory collection (Repositories, Pipelines, Policies, etc.)
-Access & authentication setup (PATs, SSO, OAuth)
-Risk assessment & mitigation planning
+#Backlog Categories
+1. __Pre-Migration Tasks__
+     * Inventory collection (Repositories, Pipelines, Policies, etc.)
+     * Access & authentication setup (PATs, SSO, OAuth)
+     * Risk assessment & mitigation planning
 
-Dry Run Tasks
-Asset migration testing
-Validation and issue logging
-Documentation of dry-run results
+1. __Dry Run Tasks__
+     * Asset migration testing
+     * Validation and issue logging
+     * Documentation of dry-run results
 
-Production Migration Tasks
-Execute final migrations
-Post-migration validation and fixes
-Ensure CI/CD pipelines, security rules, and access controls are intact
+1. Production Migration Tasks
+     * Execute final migrations
+     * Post-migration validation and fixes
+     * Ensure CI/CD pipelines, security rules, and access controls are intact
 
-Post-Migration Tasks
-Developer onboarding and training
-Retrospective and documentation
-Continuous monitoring setup (DORA metrics, GitHub Insights)
+1. Post-Migration Tasks
+     * Developer onboarding and training
+     * Retrospective and documentation
+     * Continuous monitoring setup (DORA metrics, GitHub Insights)
 
-Backlog Prioritization Criteria
-Business impact
-Technical complexity
-Risk level
-Dependencies between assets
+ ### __Backlog Prioritization Criteria__
+     * Business impact
+     * Technical complexity
+     * Risk level
+     * Dependencies between assets
 
 ## 4. Team Cadence & Governance
 
