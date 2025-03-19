@@ -2,8 +2,9 @@
 ## 1. __Overview__
 
    The __GitHub Migration Framework__ provides a structured approach for migrating from existing DevOps toolchains to GitHub, ensuring smooth execution, risk mitigation, and alignment with organizational goals. This framework exclusively utilizes __Microsoft and GitHub-related products__, including __Office 365 and GitHub (Repos, Projects, Issues, Discussions, Actions, etc.)__.
+<img width="990" alt="Screenshot 2025-03-19 at 11 23 13 AM" src="https://github.com/user-attachments/assets/d54309be-cbbb-47b4-b398-ffd42d8f1fe4" />
 
-
+![ alt text](/path/image. jpg
    
 ## 2. __Migration Project Management Components__   
 
@@ -53,7 +54,7 @@ Technical complexity
 Risk level
 Dependencies between assets
 
-4. Team Cadence & Governance
+## 4. Team Cadence & Governance
 
 Team Structure
 Migration Lead: Oversees the entire migration process.
@@ -67,7 +68,7 @@ Weekly Migration Review (60 min): Assess backlog progress, validate dry-run outc
 Stakeholder Sync (Bi-weekly/As needed): Align with business leaders and ensure priorities are met.
 Post-Migration Retrospective: Identify improvements for future migrations.
 
-5. Artifacts & Templates
+## 5. Artifacts & Templates
 
 
 **Artifact**	**Purpose**	**Format**	
@@ -79,14 +80,14 @@ Post-Migration Retrospective: Identify improvements for future migrations.
 **Post-Migration Health Check**	Ensures all repositories, pipelines, and security settings are intact.	Markdown (GitHub Repo)	
 
 
-6. Integration with GitHub Project Tools
+## 6. Integration with GitHub Project Tools
 For migration execution and tracking, use GitHub Projects:
 Kanban Board for Backlog Management
 Issue Tracking for Migration Blockers
 Pull Requests for Automated Migration Validations
 GitHub Actions for CI/CD Post-Migration Validation
 
-7. Migration Execution Phases
+## 7. Migration Execution Phases
 
 a. Pre-Migration Phase
 Assessment & Planning
@@ -121,11 +122,11 @@ Provide final documentation.
 Train developers and administrators on the new GitHub setup.
 Transition ongoing management to operational teams.
 
-8. Next Steps
+## 8. Next Steps
 Refine the backlog structure for better prioritization.
 Define granular checklists for each migration phase.
 **Validate team cadence with real migration execution.
 Develop detailed artifacts and templates for use within GitHub repositories.
 
-9. Migration Program Rollout
+## 9. Migration Program Rollout
 
