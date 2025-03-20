@@ -66,7 +66,8 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 
 ## Practices Specific
 This is where playbooks, frameworks, and designs are placed for specific practices
-[Practices](https://docs/practices)
+
+* [Practices](docs/practices)
 
 ## Contributing
 
