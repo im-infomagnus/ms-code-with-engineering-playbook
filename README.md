@@ -64,6 +64,10 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 * [Machine Learning/AI Fundamentals](docs/ml-and-ai-projects/README.md)
 * [User-Interface Engineering](docs/UI-UX/README.md)
 
+## Practices Specific
+This is where playbooks, frameworks, and designs are placed for specific practices
+[Practices](https://docs/practices)
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
