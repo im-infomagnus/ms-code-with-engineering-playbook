@@ -13,7 +13,7 @@ Every ML project in ISE goes through a Responsible AI (RAI) assessment to ensure
 
 Every project goes through the RAI process, whether we are building a new ML model from scratch, or putting an existing model in production.
 
-## ISE's Responsible AI process
+## InfoMagnus's Responsible AI process
 
 The process begins as soon as we start a prospective project. We start to complete a Responsible AI review document, and an impact assessment, which provides a structured way to explore topics such as:
 
