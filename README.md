@@ -1,4 +1,4 @@
-# ISE Engineering Fundamentals Customer/Partner Engineering Playbook
+# InfoMagnus Engineering Fundamentals Customer/Partner Engineering Playbook
 
 An engineer or data scientist working on an InfoMagnus project...
 
