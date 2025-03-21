@@ -74,7 +74,8 @@ __Backlog Categories__
 |**Inventory Collection** |	Tracks existing assets and dependencies.	| Excel (Office 365 - Attached)	|
 |**Migration Plan** |	Outlines strategy, risk assessment, and execution details.	| Excel (Office 365 - Attached)	
 |**Migration Backlog** |	Tracks all migration tasks and prioritization.	| GitHub Projects	
-|**Project Status Reports** |	Periodic reports for leadership and stakeholders.	| Word/Excel (Office 365)	
+|**User Mapping Template** | Template for customers to map users between source and GHE target | Excel 
+|**Project Status Reports** |	Periodic reports for leadership and stakeholders.	| PowerBI Report	
 |**Issue Tracking Document** |	Logs migration issues and resolutions.	| GitHub Issues	
 |**Post-Migration Health Check** |	Ensures all repositories, pipelines, and security settings are intact.	| Markdown (GitHub Repo)	
 
@@ -91,34 +92,37 @@ For migration execution and tracking, use __GitHub Projects:__
 a. Pre-Migration Phase
 * Assessment & Planning
   * Inventory all repositories, pipelines, users, permissions, policies, integrations.
-  * Define the scope and prioritize migration.
-  * Plan for governance, compliance, and security configurations.
+  * Confirm the scope and prioritize migration into waves to align with customer needs and to minimize downtime.
+  * Plan for governance, compliance, and security configurations - Review source and target systems.
 * Generate Access & Tokens
   * Set up authentication (SSO, PATs, OAuth).
   * Establish required security policies.
 
 b. Dry-Run Phase
 * Discovery & Pre-Migration Analysis
-  * Map existing assets to GitHub equivalents.
+  * Map existing assets to GitHub equivalents. Provide template to customer if their assistance is needed.
   * Identify compatibility issues.
 * Dry-Run Execution
   * Perform a test migration and verify integrity.
   * Validate CI/CD, secrets, and access control.
 * Dry-Run Analysis
   * Document findings and refine migration plans.
+  * Review results with customer. 
 
 c. Production Migration Phase
 * Production Planning
   * Apply lessons from dry-run testing.
-  * Define final cutover strategy.
+  * Define final cutover strategy with customer.
 * Production Execution
   * Migrate assets and validate functionality.
 * Post-Migration Analysis
   * Conduct health checks and confirm success metrics.
+  * Engage customer to assist in validation of downstream and other points of integration.
+* Repeat for each defined migration wave
 
 d. Engagement Closeout
 * Provide final documentation.
-* Train developers and administrators on the new GitHub setup.
+* Train developers and administrators on the new GitHub setup (if in scope).
 * Transition ongoing management to operational teams.
 
 ## 8. Next Steps
