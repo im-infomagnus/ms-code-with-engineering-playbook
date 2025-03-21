@@ -24,7 +24,7 @@
 2. **Environment Variables**: Use uppercase letters with underscores to separate words (e.g., `DATABASE_URL`, `API_KEY`).
 
 ### Resources for Further Reading
-- [Microsoft Naming Guidelines](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)[1](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)
-- [Azure Resource Naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)[2](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
-- [Resource Naming and Tagging Decision Guide](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming-and-tagging-decision-guide)[3](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming-and-tagging-decision-guide)
-- [Good Naming Practices in Software Development](https://gorillalogic.com/blog-and-resources/good-naming-practices-in-software-development)[4](https://gorillalogic.com/blog-and-resources/good-naming-practices-in-software-development)
+- [Microsoft Naming Guidelines](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)
+- [Azure Resource Naming](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
+- [Resource Naming and Tagging Decision Guide](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming-and-tagging-decision-guide)
+- [Good Naming Practices in Software Development](https://gorillalogic.com/blog-and-resources/good-naming-practices-in-software-development)
