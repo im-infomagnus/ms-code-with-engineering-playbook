@@ -1,5 +1,7 @@
 # InfoMagnus Engineering Fundamentals Customer/Partner Engineering Playbook
 
+Link to [primary documents](./docs/README.md)
+
 An engineer or data scientist working on an InfoMagnus project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
