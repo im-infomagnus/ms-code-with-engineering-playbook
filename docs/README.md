@@ -15,9 +15,12 @@ This is our playbook. All contributions are welcome! Please feel free to submit 
 * To reduce the number of mistakes and avoid common pitfalls.
 * To strive to be better engineers and learn from other people's shared experience.
 
-If you do nothing else follow the [Engineering Fundamentals Checklist](./engineering-fundamentals-checklist.md)!
+*If you do nothing else follow the [Engineering Fundamentals Checklist](./engineering-fundamentals-checklist.md)!*
 
-The [first week of an InfoMagnus project](./the-first-week-of-an-infomagnus-project.md) is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
+*This is the [Project Startup Checklist](./project-startup-tasks.md)*
+It is defined per role, and gives the set of tasks each role completes to ensure other team members and the project get a smooth start
+
+*The [first week of an InfoMagnus project](./the-first-week-of-an-infomagnus-project.md)* is a breakdown of the sections of the playbook according to the structure of an Agile sprint.
 
 ## General Guidance
 
