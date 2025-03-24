@@ -21,8 +21,29 @@ The purpose of this document is to:
   - Set up a project in your chosen project management tool (ex. Azure DevOps)
   - [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) in good User Stories and Acceptance Criteria
   - [Non-Functional Requirements Guidance](design/design-patterns/non-functional-requirements-capture-guide.md)
+     
+  
+
+## Day 0 - Project Handoff to Delivery
+- Call between Sales, Practice Director, Technology VP, and the Project Delivery team to:
+> - Review the customer need and objectives
+> - Discuss the project and the key deliverables and tasks that have been agreed to
+> - Discuss the customer - what are the big picture objectives with the customer following the engagement? What key things does the delivery team need to know to be successful - key contacts, issues, points of focus, etc.
+> - Confirmation from Sales the customer is ready to engage
+- Formal handoff between sales and the customer to intoduce the delivery Project Manager
+- Project Manager should then reach out to the customer to get the kick-off call scheduled.
+
 
 ## Day 1
+
+- Project Kick-off
+> - Call with customer scheduled by the Project Manager to review
+>   > - Project
+>   > - Goals
+>   > - Objectives
+>   > - Team
+>   > - Establish communication pathways, weekly status meetings, coordinate
+>   > - Request access / permissions to systems as needed
 
 - [ ] [Plan the first sprint](agile-development/ceremonies.md#sprint-planning)
   - Agree on a sprint goal, and how to measure the sprint progress
