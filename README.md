@@ -21,7 +21,7 @@ If you do nothing else follow the [Engineering Fundamentals Checklist](docs/engi
 
 ## Structure of a Sprint
 
-A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to the structure of an Agile sprint.
+A [breakdown of sections](docs/the-first-week-of-an-infomagnus-project.md) according to the structure of an Agile sprint.
 
 ## General Guidance
 
@@ -39,7 +39,7 @@ A [breakdown of sections](docs/the-first-week-of-an-ise-project.md) according to
 ## Resources
 
 * [Engineering Fundamentals Checklist](docs/engineering-fundamentals-checklist.md)
-* [The first week of an ISE project](docs/the-first-week-of-an-ise-project.md)
+* [The first week of an InfoMagnus project](docs/the-first-week-of-an-infomagnus-project.md)
 
 ## Engineering Fundamentals
 
