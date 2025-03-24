@@ -50,7 +50,7 @@ This contains a set of tasks that each role is responsbile for to initiate a pro
 - [ ] Monitor Compliance: Monitor the team's adherence to the playbook and address any deviations.
 - [ ] Provide Training: Conduct training sessions to educate the team on best practices.
 - [ ] Feedback Loop: Establish a feedback loop to continuously improve the playbook.
-- [ ]. Report Issues: Report any issues or concerns related to the playbook to the leadership.
+- [ ] Report Issues: Report any issues or concerns related to the playbook to the leadership.
 
 ### Sales and Business Development
 - [ ] Lead Qualification: Identify and qualify potential leads for the project.
