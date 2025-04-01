@@ -16,6 +16,7 @@ This contains a set of tasks that each role is responsbile for to initiate a pro
 - [ ] Risk Assessment: Identify potential risks and develop mitigation strategies.
 - [ ] Stakeholder Communication: Establish communication channels and schedules for regular updates.
 - [ ] Kickoff Meeting: Schedule and conduct a project kickoff meeting with all stakeholders.
+- [ ] Set up team in TBS
 
 ### Quality Assurance Engineers
 - [ ] Review Requirements: Understand the project requirements and acceptance criteria.
@@ -37,6 +38,7 @@ This contains a set of tasks that each role is responsbile for to initiate a pro
 - [ ] Component Design: Break down the system into components and define their interactions.
 - [ ] Documentation: Create detailed technical documentation for the development team.
 - [ ] Review and Approval: Review and approve the project plan, architecture, and design documents.
+- [ ] Create Teams Channel
 
 ### Documentation Specialists
 - [ ] Gather Information: Collect all relevant information from stakeholders and team members.
