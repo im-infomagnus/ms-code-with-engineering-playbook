@@ -1,0 +1,90 @@
+name: pull-project-tasks
+
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow
+    inputs:
+      org_name:
+        description: 'The name of the GitHub Organization containing the project'
+        required: true
+        default: ''
+      project_name:
+        description: 'The name of the GitHub Project to update'
+        required: true
+        default: ''
+      source_owner:
+        description: 'The owner of the source repository'
+        required: true
+        default: 'im-infomagnus'
+      source_repo:
+        description: 'The name of the source repository'
+        required: true
+        default: 'ms-code-with-engineering-playbook'
+      target_owner:
+        description: 'The owner of the target repository'
+        required: true
+        default: ''
+      target_repo:
+        description: 'The name of the target repository'
+        required: true
+        default: ''
+      pat_secret:
+        description: 'The name of the secret containing the PAT'
+        required: true
+        default: ''
+
+jobs:
+  update-project:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Authenticate with GitHub PAT
+      env:
+        GITHUB_TOKEN: ${{ secrets[inputs.pat_secret] }}
+      run: |
+        echo "Authenticated using PAT from secret: ${{ inputs.pat_secret }}"
+
+    - name: Fetch Issues and Build Full Hierarchy
+      uses: ./.github/actions/fetch-hierarchy
+      with:
+        github-token: ${{ secrets[inputs.pat_secret] }}
+        source-owner: ${{ inputs.source_owner }}
+        source-repo: ${{ inputs.source_repo }}
+        target-owner: ${{ inputs.target_owner }}
+        target-repo: ${{ inputs.target_repo }}
+
+    - name: Copy Issues to Target Repository and Track Mapping
+      uses: ./.github/actions/copy-issues
+      with:
+        github-token: ${{ secrets[inputs.pat_secret] }}
+        source-owner: ${{ inputs.source_owner }}
+        source-repo: ${{ inputs.source_repo }}
+        target-owner: ${{ inputs.target_owner }}
+        target-repo: ${{ inputs.target_repo }}
+
+    - name: Add Issues to GitHub Project and Maintain Relationships
+      uses: ./.github/actions/add-to-project
+      with:
+        github-token: ${{ secrets[inputs.pat_secret] }}
+        org-name: ${{ inputs.org_name }}
+        project-name: ${{ inputs.project_name }}
+        source-owner: ${{ inputs.source_owner }}
+        source-repo: ${{ inputs.source_repo }}
+        target-owner: ${{ inputs.target_owner }}
+        target-repo: ${{ inputs.target_repo }}
+
+    - name: Update Parent Issues with Child Links
+      uses: ./.github/actions/update-parent-links
+      with:
+        github-token: ${{ secrets[inputs.pat_secret] }}
+        source-owner: ${{ inputs.source_owner }}
+        source-repo: ${{ inputs.source_repo }}
+        target-owner: ${{ inputs.target_owner }}
+        target-repo: ${{ inputs.target_repo }}
