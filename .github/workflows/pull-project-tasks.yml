@@ -52,7 +52,7 @@ jobs:
         echo "Authenticated using PAT from secret: ${{ inputs.pat_secret }}"
 
     - name: Fetch Issues and Build Full Hierarchy
-      uses: ./.github/actions/fetch-hierarchy
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         source-owner: ${{ inputs.source_owner }}
@@ -61,7 +61,7 @@ jobs:
         target-repo: ${{ inputs.target_repo }}
 
     - name: Copy Issues to Target Repository and Track Mapping
-      uses: ./.github/actions/copy-issues
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         source-owner: ${{ inputs.source_owner }}
@@ -70,7 +70,7 @@ jobs:
         target-repo: ${{ inputs.target_repo }}
 
     - name: Add Issues to GitHub Project and Maintain Relationships
-      uses: ./.github/actions/add-to-project
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         org-name: ${{ inputs.org_name }}
@@ -81,7 +81,7 @@ jobs:
         target-repo: ${{ inputs.target_repo }}
 
     - name: Update Parent Issues with Child Links
-      uses: ./.github/actions/update-parent-links
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         source-owner: ${{ inputs.source_owner }}
