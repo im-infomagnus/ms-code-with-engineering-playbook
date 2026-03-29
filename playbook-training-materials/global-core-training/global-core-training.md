@@ -412,19 +412,23 @@ All contributions are welcome! Please feel free to submit a pull request to get 
 
 ## Tracking Implementation of Playbook Usage
 
-**All future projects will be required to include GH Issues in a given project's repo that correlate with the Playbook items detailed in those implemention files:**
+**All future projects will be required to include GH Issues in a given project's repo that correlate with the Playbook items detailed in those implementation files:**
 
 - Engineering Fundamentals Checklist
 - Project Startup Checklist
 - The First Week of an InfoMagnus Project
 <br>
 
-The following GH Actions workflow process will autogenerate the Issues into your team's repo:
---TO BE COMPLETED--
+To import the GH Issues/tasks into a GH repo, utilize the directions below to run a GH Actions workflow.
+<br>
+
+### &rarr; [Directions](../how-to-import-playbook-tasks-into-GH-issues/README.md)
+
+
 
 ---
 
-The result of the workflow will be an issues table or board (your team's choice) that will render looking like this:
+### The result of the workflow will be an issues table or board<br>(your team's choice) that will render similar to this:
 
 <img class="img-xl" src="../images/Playbook_Issues_Template_Screenshot-1.png" />
 
@@ -471,9 +475,23 @@ The result of the workflow will be an issues table or board (your team's choice)
 
 ---
 
+## Where GH Issues/tasks should reside
+
+- For all internal InfoMagnus projects, every repo should contain the Issues/tasks
+- For projects external to InfoMagnus that are potentially based in a GH repo owned by a client, Bitbucket, Azure, (etc.), a separate distinct repo will need to be created to manage and document the Issues/tasks
+
+
+**Note:**
+- any internal projects (internal to InfoMagnus) need to reside inside the GH InfoMagnus Enterprise account
+  - any internal projects that potentially are based in Azure, Bitbucket (etc.) must be migrated to the<br>GH InfoMagnus Enterprise account
+  - any internal projects stored in a GH account that is outside of the GH InfoMagnus Enterprise account need to be brought to the attention of [Byron Goodman](mailto:byron.goodman@InfoMagnus.com)
+
+
+---
+
 <!-- _class: remove-border small-text  -->
 
-> ## General Expectations
+> ## General Expectations for Teams
 > * Keep the code quality bar high.
 > * Value quality and precision over 'getting things done'.
 > * Work diligently on the one important thing.
@@ -544,7 +562,7 @@ More details on [backlog management](https://github.com/im-infomagnus/ms-code-wi
 ☐ Integration tests run to test the solution e2e.
 <br>
 
-More details on More details on [automated testing](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/automated-testing/README.md)
+More details on [automated testing](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/automated-testing/README.md)
 
 ---
 <!-- _class: checklist -->
@@ -598,7 +616,7 @@ More details on [security](https://github.com/im-infomagnus/ms-code-with-enginee
 ☐ GDPR compliance is ensured regarding PII (Personally Identifiable Information).
 <br>
 
-More details on More details on [observability](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/observability/README.md)
+More details on [observability](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/observability/README.md)
 
 
 ---
@@ -727,7 +745,7 @@ More details on [developer experience](https://github.com/im-infomagnus/ms-code-
 > - Organize content in the playbook for quick reference and discoverability
 > - Provide content in a logical structure which reflects the engineering process
 > - Extensible hierarchy to allow teams to share deep subject-matter expertise
-> - Layout tasks that each team is responsbile for when starting a project - from inception through it's first week
+> - Layout tasks that each team is responsible for when starting a project - from inception through its first week
 
 ---
 <!-- _class: small-text checklist-->
@@ -760,7 +778,7 @@ More details on [developer experience](https://github.com/im-infomagnus/ms-code-
   - Discuss the project and the key deliverables and tasks that have been agreed to
   - Discuss the customer - what are the big picture objectives with the customer following the engagement? What key things does the delivery team need to know to be successful (key contacts, issues, points of focus, etc.)?
 - Confirmation from Sales the customer is ready to engage
-- Formal handoff between sales and the customer to intoduce the delivery Project Manager
+- Formal handoff between sales and the customer to introduce the delivery Project Manager
 - Project Manager should then reach out to the customer to get the kick-off call scheduled.
 
 ---
@@ -843,7 +861,7 @@ More details on [developer experience](https://github.com/im-infomagnus/ms-code-
 
 ☐ [Set up Continuous Deployment](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/CI-CD/continuous-delivery.md)
   - Determine what environments are appropriate for this solution
-  - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sing-off for promotion.
+  - For each environment discuss purpose, when deployment should trigger, pre-deployment approvers, sign-off for promotion.
 <br>
 
 ☐ [Decide on a versioning strategy](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/source-control/component-versioning.md)
@@ -865,7 +883,7 @@ More details on [developer experience](https://github.com/im-infomagnus/ms-code-
   - Set a timeline, and discuss facilitation, meeting structure etc.
 <br>
 
-☐ [Refine the Backlog](ahttps://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/agile-development/advanced-topics/backlog-management)
+☐ [Refine the Backlog](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/agile-development/advanced-topics/backlog-management)
   - Determine required participants
   - Update the [Definition of Ready](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/agile-development/team-agreements/definition-of-ready.md)
   - Update estimates, and the [Estimation](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/tree/main/docs/agile-development/ceremonies.md#estimation) document
@@ -881,7 +899,7 @@ More details on [developer experience](https://github.com/im-infomagnus/ms-code-
 ---
 <!-- _class: large-text  -->
 
-> **This contains a set of tasks that each role is responsbile for to initiate a project. If a task is not required for a specific project, have the team agree to bypass that task.**
+> **This contains a set of tasks that each role is responsible for to initiate a project. If a task is not required for a specific project, have the team agree to bypass that task.**
 
 ---
 

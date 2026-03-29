@@ -375,14 +375,14 @@ section.checklist p {
 
  The engineering playbook contains a substantial amount of information, guidance and resources to support engineers and other important roles that serve InfoMagnus.
 
-**Domains included are::**
+**Domains included are:**
 
 - Agile Development
 - Automated Testing
 - CI-CD
 - Code Reviews
 - Design
-- Developer Experiene
+- Developer Experience
 - Documentation
 - Engineering Feedback
 - GH Migration
@@ -547,11 +547,11 @@ More details on [automated testing](https://github.com/im-infomagnus/ms-code-wit
 - Fault Injection Testing
 - Integration Testing
 - Performance Testing
-- Loaad Testing 
+- Load Testing 
 - Shadow Testing / Smoke Testing
 - Synthetic Monitoring Tests
 - Building Containers with GH Actions and Testing
-- Unit TEsts
+- Unit Tests
 - Dependency Injection & Dependency Testing                                                    |
 
 ---
@@ -757,7 +757,7 @@ More details on [design reviews](https://github.com/im-infomagnus/ms-code-with-e
 
 # CORE TOPICS COVERED
 
-- Exception Handlign / Exception Constructs
+- Exception Handling / Exception Constructs
 - Custom Exceptions / Custom Exception Hierarchy
 - Error Details in API Response
 - Design Patterns
@@ -1044,7 +1044,7 @@ More details on [engineering feedback](https://github.com/im-infomagnus/ms-code-
 ---
 <!-- _class: remove-border -->
 
-> ## Why ML & AI Projects> 
+> ## Why ML & AI Projects
 > - We want to help customers unlock the business value of their data through principled, production-grade ML/AI solutions — not just one-off experiments
 > - We want to ensure that ML work follows the same engineering rigor as software development: testing, version control, CI/CD, and code review
 > - We want to reduce the risk of investing in the wrong solution by front-loading feasibility studies and data exploration before committing to a full build
@@ -1085,7 +1085,7 @@ More details on [engineering feedback](https://github.com/im-infomagnus/ms-code-
 - Feasibility Studies
 - ML Fundamentals Checklist
 - ML Model Production Checklist
-- Important Questions Regarding Model Consdiderations
+- Important Questions Regarding Model Considerations
 - Monitoring Drift in Data Characteristics
 - Model Experimentation
 - Data Quality (garbage in -\> garbage out)
@@ -1212,7 +1212,7 @@ More details on [engineering feedback](https://github.com/im-infomagnus/ms-code-
 - Backup Data
 - Target Uptime & Failing Gracefully
 - Chaos Testing
-- Failure Analyis
+- Failure Analysis
 - Scalability
 - Usability
 
@@ -1484,7 +1484,7 @@ More details on [source control](https://github.com/im-infomagnus/ms-code-with-e
   - Git installation
   - Git config commands
   - Cloning Repos
-  - Commiting Changes
+  - Committing Changes
   - Pushing Changes
   - Merging 
   - Merge Conflicts
@@ -1554,7 +1554,7 @@ More details on [source control](https://github.com/im-infomagnus/ms-code-with-e
 - Design Ops
 - Establishing a Web Application's Architecture
 - Framework Options: Fundamentals
-- Recommneded Technologies
+- Recommended Technologies
 - Managing Secrets with Environmental Variables
 - Common Security Pitfalls
 - Incorporating Axios for REST API Calls
