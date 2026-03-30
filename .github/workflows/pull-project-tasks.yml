@@ -61,7 +61,7 @@ jobs:
         target-repo: ${{ inputs.target_repo }}
 
     - name: Copy Issues to Target Repository and Track Mapping
-      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/copy-issues@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         source-owner: ${{ inputs.source_owner }}
@@ -70,7 +70,7 @@ jobs:
         target-repo: ${{ inputs.target_repo }}
 
     - name: Add Issues to GitHub Project and Maintain Relationships
-      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/add-to-project@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         org-name: ${{ inputs.org_name }}
@@ -81,7 +81,7 @@ jobs:
         target-repo: ${{ inputs.target_repo }}
 
     - name: Update Parent Issues with Child Links
-      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/fetch-hierarchy@main
+      uses: im-infomagnus/ms-code-with-engineering-playbook/.github/actions/update-parent-links@main
       with:
         github-token: ${{ secrets[inputs.pat_secret] }}
         source-owner: ${{ inputs.source_owner }}
