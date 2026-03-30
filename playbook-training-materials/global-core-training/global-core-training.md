@@ -339,7 +339,7 @@ section.checklist  p {
 ---
 
 
-## Training Objectives
+## Playbook & Training Objectives
 
 * **Increase Team Efficiency:** Provide clear guidelines and best practices to enhance overall efficiency for team members.
 * **Reduce Mistakes and Avoid Pitfalls:** Educate team members on common mistakes and pitfalls to ensure higher quality work.
@@ -354,22 +354,20 @@ section.checklist  p {
 ## An engineer working for an InfoMagnus project...
 
 * Has responsibilities to their team – mentor, coach, and lead.
-* Knows their **playbook**. Follows their playbook. Fixes their playbook if it is broken. If they find a better playbook, they copy it. If somebody could use their playbook, they share it.
+* Knows their **playbook**. Follows their playbook. Utilizes their playbook.
 * Leads by example. Models the behaviors we desire both interpersonally and technically.
 * Strives to understand how their work fits into a broader context and ensures the outcome.
 <br>
 
 [This is <u>OUR</u> playbook](https://github.com/im-infomagnus/ms-code-with-engineering-playbook).
 
-All contributions are welcome! Please feel free to submit a pull request to get involved.
 
 ---
 
 ## Where to Find the Playbook
 
 * **GitHub Repo:** <br>[https://github.com/im-infomagnus/ms-code-with-engineering-playbook](https://github.com/im-infomagnus/ms-code-with-engineering-playbook)
-* **Microsoft Teams:** Engineering Excellence | Engineering Playbook
-
+* **Microsoft Teams:** [Engineering Playbook Support](https://teams.microsoft.com/l/channel/19%3ARDetb_2o-wHYuhln_a-ccT2-AId8Ik3b3-gHD6dntp01%40thread.tacv2/Engineering%20Playbook%20Support?groupId=81760021-9c8f-4924-8c89-e789ca4b85d5&tenantId=4e31fdef-8b04-47cb-a9f6-8c0b2ad482e1&ngc=true&allowXTenantAccess=true)
 ---
 <!-- _class: remove-border  -->
 
@@ -482,7 +480,7 @@ To import the GH Issues/tasks into a GH repo, utilize the directions below to ru
 
 
 **Note:**
-- any internal projects (internal to InfoMagnus) need to reside inside the GH InfoMagnus Enterprise account
+- Any internal projects (internal to InfoMagnus) need to reside inside the GH InfoMagnus Enterprise account
   - any internal projects that potentially are based in Azure, Bitbucket (etc.) must be migrated to the<br>GH InfoMagnus Enterprise account
   - any internal projects stored in a GH account that is outside of the GH InfoMagnus Enterprise account need to be brought to the attention of [Byron Goodman](mailto:byron.goodman@InfoMagnus.com)
 
@@ -546,7 +544,7 @@ More details on [source control](https://github.com/im-infomagnus/ms-code-with-e
 
 ### Work Item Tracking
 
-☐ All items are tracked in AzDevOps (or similar).
+☐ All items are tracked in via GH Issues, AzDevOps (or similar).
 
 ☐ The board is organized (swim lanes, feature tags, technology tags).
 <br>
