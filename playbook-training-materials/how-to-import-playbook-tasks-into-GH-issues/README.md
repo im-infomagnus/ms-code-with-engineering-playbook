@@ -1,6 +1,6 @@
 # How to Import Playbook Tasks into GitHub Issues
 
-This guide walks you through importing engineering playbook tasks into your project's GitHub repository as Issues. By the end, you'll have a full set of playbook tasks available in your repo's **Projects** board and **Issues** tab.
+This guide walks you through importing engineering playbook tasks into your project's GitHub repository as Issues. The workflow is run directly from the playbook repo — there is no need to copy any files into your own project. By the end, you'll have a full set of playbook tasks available in your repo's **Projects** board and **Issues** tab.
 
 ## Prerequisites
 
@@ -12,29 +12,7 @@ This guide walks you through importing engineering playbook tasks into your proj
 
 ## Steps
 
-### Step 1 — Copy the Workflow File from the Playbook Repo
-
-1. Navigate to the playbook repo: [https://github.com/im-infomagnus/ms-code-with-engineering-playbook](https://github.com/im-infomagnus/ms-code-with-engineering-playbook)
-2. Find the file: `.github/workflows/pull-project-tasks.yml`
-3. Click on the file, then click the **Copy raw file** button (or click **Raw** and copy all of the YAML contents). You will paste this into your own repo in the next steps.
-
-### Step 2 — Create the Workflows Folder in Your Project Repo
-
-1. Within your project repo, make sure a `.github/workflows` folder exists in the root of the project.
-   - You can create this via the GitHub UI by clicking **Add file > Create new file** and typing `.github/workflows/` as the beginning of the file path.
-
-> **Important:** The `.github` folder **must** begin with a period (`.`) and be located directly in the project's root. The child folder `workflows` **must** be located directly inside the `.github` folder and named exactly `workflows`.
-
-### Step 3 — Create the Workflow File
-
-1. Within the `workflows` folder, create a file called `pull-project-tasks.yml`.
-2. Paste the YAML content you copied in **Step 1** into this file and save it.
-
-### Step 4 — Push the Workflow File to GitHub
-
-1. If not already pushed to GitHub, make sure the new `.github/workflows/pull-project-tasks.yml` file is committed and pushed to your project's repo.
-
-### Step 5 — Create a GitHub Project
+### Step 1 — Create a GitHub Project
 
 1. Navigate to the main page of your project's repo and click the **Projects** tab in the header navigation bar.
 2. On the Projects page, click the green **Link a project** button, then select **New project**.
@@ -43,7 +21,7 @@ This guide walks you through importing engineering playbook tasks into your proj
 
 > **Note:** This is the Project you will import Issues/tasks into. You will need to reference this project's name when running the workflow later.
 
-### Step 6 — Create a Personal Access Token (PAT)
+### Step 2 — Create a Personal Access Token (PAT)
 
 1. Click your **profile avatar** in the upper-right corner of GitHub and select **Settings** from the dropdown menu.
 2. On the Settings page, scroll to the bottom of the left sidebar and click **Developer settings**.
@@ -51,53 +29,64 @@ This guide walks you through importing engineering playbook tasks into your proj
 4. Click **Generate new token** > **Generate new token (classic)**.
 5. Give your token a descriptive name (e.g., `playbook-import-token`) and configure the following scopes:
    - **repo** — Full control of private repositories ✅
-   - **admin:org > read:org** — Read org membership ✅
+   - **workflow** — Update GitHub Action workflows ✅
    - **project** — Full control of projects ✅
 6. Click **Generate token** at the bottom of the page.
 7. **Copy the token value immediately** — you will not be able to see it again after leaving this page.
 
 > **Important:** If your organization uses SSO, you will also need to authorize the token for SSO. On the **Personal access tokens** page, find your token and click **Configure SSO**, then click **Authorize** next to your organization.
 
-### Step 7 — Add the PAT as a Repository Secret
+### Step 3 — Add the PAT as a Repository Secret in the Playbook Repo
 
-1. Navigate back to the main page of your project's repo and click **Settings** in the header navigation bar (far right).
-2. In the left sidebar, click **Secrets and variables** and then select **Actions**.
-3. Click the green **New repository secret** button.
-4. Enter a name for the secret (e.g., `PLAYBOOK_PAT`) and paste the token value you copied in **Step 6** into the **Secret** field.
-5. Click **Add secret**.
+The PAT must be stored as a secret in the **playbook repo** (not your project's repo), since that is where the workflow runs.
 
-> **Note:** Remember the exact name you gave this secret — you will need to enter it when running the workflow.
+1. Navigate to the [playbook repo settings](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/settings) via the Setting tab and click **Secrets and variables** in the left sidebar, then select **Actions**.
+2. Click the green **New repository secret** button.
+3. Enter a **unique name** for the secret (e.g., `YOURNAME_PLAYBOOK_PAT`) and paste the token value you copied in **Step 2** into the **Secret** field. Use a name that is unique to you to avoid conflicts with other team members' secrets.
+4. Click **Add secret**.
 
-### Step 8 — Navigate to the Actions Tab
+> **Note:** Remember the exact name you gave this secret — you will need to enter it when running the workflow. You will delete this secret after the import is complete (see **Step 8**).
 
-1. On your project's repo, click the **Actions** tab in the header navigation bar.
+### Step 4 — Navigate to the Workflow
 
-### Step 9 — Locate the Workflow
+1. Go directly to the workflow page:
+   [https://github.com/im-infomagnus/ms-code-with-engineering-playbook/actions/workflows/pull-project-tasks.yml](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/actions/workflows/pull-project-tasks.yml)
 
-1. On the Actions page, in the left sidebar under **Actions**, locate and click **pull-project-tasks**.
-
-> **Note:** This corresponds to the `.github/workflows/pull-project-tasks.yml` file you pushed to your repo in **Step 4**.
-
-### Step 10 — Run the Workflow
+### Step 5 — Run the Workflow
 
 1. On the **pull-project-tasks** workflow page, click the **Run workflow** dropdown on the right side of the page.
 2. Fill in the input fields:
    - **The name of the GitHub Organization containing the project** — your org name
-   - **The name of the GitHub Project to update** — the project name you created in **Step 5**
+   - **The name of the GitHub Project to update** — the project name you created in **Step 1**
    - **The owner of the source repository** — should be prepopulated with `im-infomagnus`
    - **The name of the source repository** — should be prepopulated with `ms-code-with-engineering-playbook`
-   - **The owner of the target repository** — your org or user that owns the target repo
+   - **The owner of the target repository** — enter your **organization name** (not an individual user name)
    - **The name of the target repository** — your project's repo name
-   - **The name of the secret containing the PAT** — the secret name you created in **Step 7** (e.g., `PLAYBOOK_PAT`)
+   - **The name of the secret containing the PAT** — the secret name you created in **Step 3** (e.g., `PLAYBOOK_PAT`)
 3. Once all fields are filled in, click the green **Run workflow** button.
 
-### Step 11 — Verify the Workflow Completes
+### Step 6 — Verify the Workflow Completes
 
 1. The workflow should now be triggered and running. You can monitor its progress on the **Actions** tab.
 
 > **Note:** This process may take 20 minutes or longer to complete.
 
-### Step 12 — Confirm the Imported Issues
+### Step 7 — Confirm the Imported Issues
 
 1. Once the workflow has completed successfully, navigate to the **Projects** tab in your repo to verify that the Issues/tasks have been imported to your Table or Board.
 2. You can also find the imported Issues under the **Issues** tab of your repo.
+
+### Step 8 — Delete the PAT Secret from the Playbook Repo
+
+Once the Issues/tasks have been successfully imported, you should remove the secret you created in **Step 3** from the playbook repo.
+
+1. Navigate to the [playbook repo settings](https://github.com/im-infomagnus/ms-code-with-engineering-playbook/settings) and click **Secrets and variables** in the left sidebar, then select **Actions**.
+2. Find the secret you created (e.g., `YOURNAME_PLAYBOOK_PAT`) and click the **Delete** button (trash icon) next to it.
+3. Confirm the deletion.
+
+> **Important:** Do not leave your PAT secret stored in the playbook repo after the import is complete. Removing it ensures that your token is not accessible to others who have access to the repo.
+
+### Step 9 — Recommended Project View Settings
+
+1. **Table view:** It is recommended to update the View settings (found towards the upper right of the screen, indicated by a cog/gear icon) to **Group by > Parent Issue**. This will organize the tasks under their respective parent issues for easier navigation.
+2. **Board view:** It may be helpful to update the View settings to **Sort by > Parent Issue** to see which parent issue each task pertains to.
