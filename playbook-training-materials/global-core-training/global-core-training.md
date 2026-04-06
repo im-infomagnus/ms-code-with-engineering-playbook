@@ -367,6 +367,10 @@ section.checklist  p {
 ## Where to Find the Playbook
 
 * **GitHub Repo:** <br>[https://github.com/im-infomagnus/ms-code-with-engineering-playbook](https://github.com/im-infomagnus/ms-code-with-engineering-playbook)
+
+<br><br>
+
+## Where to Find Support
 * **Microsoft Teams:** [Engineering Playbook Support](https://teams.microsoft.com/l/channel/19%3ARDetb_2o-wHYuhln_a-ccT2-AId8Ik3b3-gHD6dntp01%40thread.tacv2/Engineering%20Playbook%20Support?groupId=81760021-9c8f-4924-8c89-e789ca4b85d5&tenantId=4e31fdef-8b04-47cb-a9f6-8c0b2ad482e1&ngc=true&allowXTenantAccess=true)
 ---
 <!-- _class: remove-border  -->
@@ -386,8 +390,8 @@ section.checklist  p {
 * **Periodic reviews:** There will be occasional reviews of projects to assess playbook adherence.
 * **Mutual support:** There is a lot for everyone to learn — support each other.
 * **New-hire onboarding:** The Engineering Playbook must be included in all onboarding activities for new hires.
-* **Accountability:** Team Leads and Project Managers are responsible for ensuring playbook follow-through on their projects.
-* **Exceptions:** Exceptions to playbook implementation may be granted on a case-by-case basis.
+* **Accountability:** Team Leads. Project Managers and Champions are responsible for ensuring playbook follow-through on their projects.
+* **Exceptions:** Exceptions to playbook implementation may be granted on a case-by-case basis. Please be sure to document exceptions.
 
 ---
 
@@ -420,11 +424,26 @@ section.checklist  p {
 To import the GH Issues/tasks into a GH repo, utilize the directions below to run a GH Actions workflow.
 <br>
 
+**FULL DOCUMENTATION**
 ### &rarr; [Directions](../how-to-import-playbook-tasks-into-GH-issues/README.md)
 
 
+---
+
+## Where GH Issues/tasks should reside
+
+- For all internal InfoMagnus projects, every repo should contain the Issues/tasks
+- For projects external to InfoMagnus that are potentially based in a GH repo owned by a client, Bitbucket, Azure, (etc.), a separate distinct repo will need to be created to manage and document the Issues/tasks
+
+
+**Note:**
+- Any internal projects (internal to InfoMagnus) need to reside inside the GH InfoMagnus Enterprise account
+  - any internal projects that potentially are based in Azure, Bitbucket (etc.) must be migrated to the<br>GH InfoMagnus Enterprise account
+  - any internal projects stored in a GH account that is outside of the GH InfoMagnus Enterprise account need to be brought to the attention of [Byron Goodman](mailto:byron.goodman@InfoMagnus.com)
+
 
 ---
+
 
 ### The result of the workflow will be an issues table or board<br>(your team's choice) that will render similar to this:
 
@@ -469,20 +488,6 @@ To import the GH Issues/tasks into a GH repo, utilize the directions below to ru
 ---
 
   <img class="img-full" src="../images/Playbook_Issues_Template_Screenshot-12.png" />
-
-
----
-
-## Where GH Issues/tasks should reside
-
-- For all internal InfoMagnus projects, every repo should contain the Issues/tasks
-- For projects external to InfoMagnus that are potentially based in a GH repo owned by a client, Bitbucket, Azure, (etc.), a separate distinct repo will need to be created to manage and document the Issues/tasks
-
-
-**Note:**
-- Any internal projects (internal to InfoMagnus) need to reside inside the GH InfoMagnus Enterprise account
-  - any internal projects that potentially are based in Azure, Bitbucket (etc.) must be migrated to the<br>GH InfoMagnus Enterprise account
-  - any internal projects stored in a GH account that is outside of the GH InfoMagnus Enterprise account need to be brought to the attention of [Byron Goodman](mailto:byron.goodman@InfoMagnus.com)
 
 
 ---
@@ -1121,6 +1126,6 @@ We welcome maintenance of the repository and contributions that:
 ---
 
 
-## Running Locally (*Remotely*)
+<!-- ## Running Locally (*Remotely*)
 
-TBD
+TBD -->
