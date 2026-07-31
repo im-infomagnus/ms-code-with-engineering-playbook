@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # Allows manual triggering of the workflow
     inputs:
       org_name:
-        description: 'The name of the GitHub Organization containing the project'
+        description: 'The name of the GitHub Organization containing the target the project board'
         required: true
         default: ''
       project_name:
@@ -12,15 +12,15 @@ on:
         required: true
         default: ''
       source_owner:
-        description: 'The owner of the source repository'
+        description: 'The Organization of the source repository'
         required: true
         default: 'im-infomagnus'
       source_repo:
         description: 'The name of the source repository'
         required: true
-        default: 'ms-code-with-engineering-playbook'
+        default: 'im-engineering-playbook'
       target_owner:
-        description: 'The owner of the target repository'
+        description: 'The Organization of the target repository'
         required: true
         default: ''
       target_repo:
